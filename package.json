@@ -1,0 +1,27 @@
+{
+  "name": "amz",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@stripe/stripe-js": "^1.52.1",
+    "axios": "^1.3.5",
+    "crypto-js": "^4.1.1",
+    "mongoose": "^7.0.3",
+    "next": "^13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "stripe": "^12.0.0"
+  }
+}
