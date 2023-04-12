@@ -1,3 +1,3 @@
-const publicRequest = "http://localhost:3000";
+const publicRequest = "https://api-amzn.vercel.app/";
 
 export { publicRequest };
