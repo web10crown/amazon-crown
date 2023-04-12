@@ -1,0 +1,44 @@
+.container {
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+.wrapper form {
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	width: 40vw;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 30%);
+	padding: 20px;
+	flex-direction: column;
+}
+.wrapper h2 {
+	margin-bottom: 20px;
+	color: #131921;
+}
+.wrapper input {
+	padding: 7px;
+	margin-bottom: 10px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+}
+.wrapper button {
+	padding: 10px;
+	border-radius: 5px;
+	margin: 20px 0;
+	cursor: pointer;
+	letter-spacing: 1px;
+	color: white;
+	border: none;
+	background-color: #131921;
+}
+
+@media screen and (max-width: 850px) {
+	.wrapper form {
+		width: 70vw;
+	}
+}

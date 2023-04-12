@@ -1,0 +1,80 @@
+.container {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+.wrapper {
+}
+.top {
+}
+.logoContainer {
+}
+.logo {
+	margin: auto;
+	margin-bottom: 20px;
+	position: relative;
+	width: 120px;
+	height: 70px;
+}
+.center {
+}
+.center h2 {
+	font-weight: 400;
+}
+.center form {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	width: 320px;
+	flex-direction: column;
+}
+.center input {
+	padding: 7px 10px;
+	outline: none;
+	border: 1px solid lightgray;
+}
+.center b {
+	margin: 10px 0;
+	font-size: 15px;
+}
+.center span {
+	margin: 10px 0;
+	font-size: 13px;
+}
+.center p {
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: 400;
+}
+.center button {
+	background-color: orange;
+	outline: none;
+	letter-spacing: 1px;
+	font-size: 15px;
+	border-radius: 2px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 7px 10px;
+}
+.terms p {
+	margin: 10px 0;
+}
+.mobile {
+	display: flex;
+	width: 100%;
+}
+.mobile select {
+	border: 1px solid lightgray;
+	padding: 7px 5px;
+	outline: none;
+	background-color: lightgray;
+	margin-right: 10px;
+}
+.mobile input {
+	flex: 1;
+}

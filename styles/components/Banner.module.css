@@ -1,0 +1,40 @@
+.bottom {
+	color: white;
+	position: unset;
+	display: flex;
+	background-color: #232f3e;
+	overflow-x: scroll;
+}
+.bottom {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.bottom::-webkit-scrollbar {
+	display: none;
+}
+.bLeft {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	padding: 0 10px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.bLeft:hover {
+	border: 1px solid white;
+}
+.bottom p {
+	padding: 10px;
+	font-size: 13px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+.bottom p:hover {
+	border: 1px solid white;
+}
+.bCenter {
+	display: flex;
+}

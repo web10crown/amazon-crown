@@ -1,0 +1,63 @@
+.container {
+	padding: 20px;
+}
+.wrapper {
+	padding: 20px;
+	background-color: white;
+	overflow-x: hidden;
+}
+.wrapper h2 {
+	margin-bottom: 10px;
+}
+.cards {
+	display: flex;
+	overflow-x: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: gray;
+}
+.card {
+	margin: 5px 7px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.imgContainer {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+.img {
+}
+
+.cards::-webkit-scrollbar {
+	height: 7px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+	background-color: gray;
+	border-radius: 20px;
+	display: none;
+}
+.cards:hover::-webkit-scrollbar-thumb {
+	display: flex;
+}
+
+@media screen and (max-width: 850px) {
+}
+@media screen and (max-width: 600px) {
+	.container {
+		padding: 5px;
+	}
+	.wrapper {
+		padding: 5px;
+	}
+	.wrapper h2 {
+		font-size: 15px;
+	}
+	.cards {
+		scrollbar-width: none;
+	}
+	.imgContainer {
+		width: 150px;
+		height: 150px;
+	}
+}

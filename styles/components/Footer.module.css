@@ -1,0 +1,53 @@
+.container {
+	background-color: #232f3e;
+	color: white;
+}
+.wrapper {
+}
+.top {
+	padding: 40px 15vw;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 0.5px solid gray;
+}
+.top p {
+	margin: 10px 0;
+	font-size: 14px;
+	cursor: pointer;
+}
+.top p:hover {
+	text-decoration: underline;
+}
+.bottom {
+	padding: 40px 10px;
+}
+.bottom p {
+	text-align: center;
+	font-size: 14px;
+	margin: 20px 0;
+}
+.logoContainer {
+	display: flex;
+	justify-content: center;
+}
+.logo {
+	position: relative;
+	width: 80px;
+	height: 30px;
+}
+
+@media screen and (max-width: 700px) {
+	.top {
+		flex-direction: column;
+		padding: 20px;
+	}
+	.left {
+		margin: 20px 0;
+	}
+	.center {
+		margin: 20px 0;
+	}
+	.right {
+		margin: 20px 0;
+	}
+}

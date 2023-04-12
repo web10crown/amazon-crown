@@ -1,0 +1,27 @@
+.container {
+	position: relative;
+	position: sticky;
+	top: 100px;
+	height: 100vh;
+	display: flex;
+	background-color: #dddddd;
+}
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+.imgContainer {
+	position: relative;
+	width: 170px;
+	height: 120px;
+}
+
+@media screen and (max-width: 600px) {
+	.imgContainer {
+		width: 130px;
+		height: 90px;
+	}
+}

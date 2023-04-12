@@ -1,0 +1,80 @@
+.container {
+	background-color: white;
+	padding: 10px 0;
+	padding-top: 40px;
+}
+.container h1 {
+	margin: 0 0 10px 10px;
+	font-weight: 400;
+	color: #232f3e;
+}
+.wrapper {
+	margin: 30px 0;
+	display: flex;
+}
+.filters {
+	border-top: 1px solid lightgray;
+	padding: 10px;
+}
+.filters h2 {
+	font-size: 15px;
+	color: #232f3e;
+	margin-bottom: 5px;
+}
+.cardContainer {
+	border: 1px solid lightgray;
+	background-color: lightgray;
+	gap: 1px 1px;
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+	background-color: white;
+	padding: 20px 30px;
+	cursor: pointer;
+}
+.imgContainer {
+	margin: auto;
+	position: relative;
+	width: 20vw;
+	height: 20vw;
+}
+.info {
+	margin-top: 30px;
+}
+.info button {
+	padding: 5px;
+	border-radius: 2px;
+	font-size: 16px;
+	border: none;
+	background-color: rgb(204, 12, 57);
+	color: white;
+}
+.info h4 {
+	margin: 5px 0;
+}
+.info p {
+	font-size: 13px;
+}
+@media screen and (max-width: 850px) {
+	.filters {
+		display: none;
+	}
+	.card {
+		padding: 15px;
+	}
+	.imgContainer {
+		width: 25vw;
+	}
+}
+@media screen and (max-width: 650px) {
+	.cardContainer {
+		grid-template-columns: auto auto;
+	}
+	.imgContainer {
+		width: 40vw;
+		height: 40vw;
+	}
+}

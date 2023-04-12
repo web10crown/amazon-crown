@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body {
+	background-color: #e3e6e6;
+}
+img {
+	object-fit: contain;
+}
+@media screen and (max-width: 600px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
