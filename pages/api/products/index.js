@@ -28,9 +28,7 @@ const handler = async (req, res) => {
 
       res.status(200).json(data);
     }
-    const data = await products.find({});
-
-    res.status(200).json(data);
+  
   }
 
   if (method === "POST") {
