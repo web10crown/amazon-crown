@@ -4,6 +4,14 @@ const nextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
   },
+   async rewrites() {
+        return [
+          {
+            source: '/api',
+            destination: 'https://api-amzn.vercel.app/api/',
+          },
+        ]
+      },
 };
 
 module.exports = nextConfig;
