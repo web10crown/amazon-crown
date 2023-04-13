@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { remove } from "@/redux/cartSlice";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(`${process.env.STRIPE_PUBLISHABLE_KEY}`);
 const Cart = () => {
 	const dispatch = useDispatch();
 	const cart = useSelector((state) => state.cart);
