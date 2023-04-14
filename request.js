@@ -1,3 +1,3 @@
-const publicRequest = "https://crown-4f7a1.web.app/";
+const publicRequest = "https://amazon-crown.vercel.app";
 
 export { publicRequest };
