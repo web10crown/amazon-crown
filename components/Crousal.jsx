@@ -62,8 +62,8 @@ const Crousal = () => {
 								<h2> Up to 60% off | Styles for women </h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=cloth women">
+										<Link href="/products?find=cloth women" >
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p1.1.jpg"
 													alt="product"
@@ -71,13 +71,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Clothing</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=footwear women">
+										<Link href="/products?find=footwear women">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p1.2.jpg"
 													alt="product"
@@ -85,13 +85,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Footwear </p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=watch women">
+										<Link href="/products?find=watch women">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p1.3.jpg"
 													alt="product"
@@ -99,13 +99,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Watches</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=jewellery women">
+										<Link href="/products?find=jewellery women">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p1.4.jpg"
 													alt="product"
@@ -113,8 +113,8 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Jewellery</p>
 									</div>
 								</div>
@@ -135,8 +135,8 @@ const Crousal = () => {
 								<h2> Up to 60% off | Styles for men </h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=cloth men">
+										<Link href="/products?find=cloth men">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p2.1.jpg"
 													alt="product"
@@ -144,13 +144,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Clothing</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=footwear men">
+										<Link href="/products?find=footwear men">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p2.2.jpg"
 													alt="product"
@@ -158,13 +158,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Footwear</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=watch men">
+										<Link href="/products?find=watch men">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p2.3.jpg"
 													alt="product"
@@ -172,13 +172,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Watches</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=bag men">
+										<Link href="/products?find=bag men">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p2.4.jpg"
 													alt="product"
@@ -186,8 +186,8 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Bags</p>
 									</div>
 								</div>
@@ -210,8 +210,8 @@ const Crousal = () => {
 								</h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=conditioner">
+										<Link href="/products?find=conditioner">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p3.1.jpg"
 													alt="product"
@@ -219,13 +219,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Conditioners</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=refrigerator">
+										<Link href="/products?find=refrigerator">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p3.2.jpg"
 													alt="product"
@@ -233,13 +233,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Refrigerators</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=microwave">
+										<Link href="/products?find=microwave">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p3.3.jpg"
 													alt="product"
@@ -247,13 +247,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Microwaves</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=washing machine">
+										<Link href="/products?find=washing machine">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p3.4.jpg"
 													alt="product"
@@ -261,8 +261,8 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Washing mashines</p>
 									</div>
 								</div>
@@ -283,8 +283,8 @@ const Crousal = () => {
 								<h2>Revamp your home in style </h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=bedsheet">
+										<Link href="/products?find=bedsheet">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p4.1.jpg"
 													alt="product"
@@ -292,13 +292,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Bedsheets & more</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=decoration">
+										<Link href="/products?find=decoration">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p4.2.jpg"
 													alt="product"
@@ -306,13 +306,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Home Decoration</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=storage">
+										<Link href="/products?find=storage">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p4.3.jpg"
 													alt="product"
@@ -320,13 +320,13 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Home Storage</p>
 									</div>
 									<div className={styles.card}>
-										<div className={styles.pImage}>
-											<Link href="/products?find=lighting">
+										<Link href="/products?find=lighting">
+											<div className={styles.pImage}>
 												<Image
 													src="/crousal/products/p4.4.jpg"
 													alt="product"
@@ -334,8 +334,8 @@ const Crousal = () => {
 													sizes="auto"
 													priority={true}
 												/>
-											</Link>
-										</div>
+											</div>
+										</Link>
 										<p>Lighting</p>
 									</div>
 								</div>
