@@ -19,7 +19,8 @@ export default function Home() {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get(`${publicRequest}/api/products/`);
+      const res = await axios.get(`${publicRequest}/api/products/`)
+        .catch((error) => {console.log(error)});
     };
     getData();
   }, []);
