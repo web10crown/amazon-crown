@@ -15,14 +15,14 @@ import { useRouter } from "next/router";
 export default function Home() {
   const router = useRouter();
 
-  // useEffect for geting product data from data base to reduce connecion time of data loading on next page
+ useEffect for geting product data from data base to reduce connecion time of data loading on next page
 
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     const res = await axios.get(`${publicRequest}/api/products/`);
-  //   };
-  //   getData();
-  // }, []);
+   useEffect(() => {
+     const getData = async () => {
+       const res = await axios.get(`${publicRequest}/api/products/`);
+     };
+     getData();
+   }, []);
 
   // useeffect for payment confirmation =========================>
 
