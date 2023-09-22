@@ -17,13 +17,13 @@ export default function Home() {
 
 // useEffect for geting product data from data base to reduce connecion time of data loading on next page
 
-  useEffect(() => {
-    const getData = async () => {
-      const res = await axios.get(`${publicRequest}/api/products/`)
-        .catch((error) => {console.log(error)});
-    };
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     const res = await axios.get(`${publicRequest}/api/products/`)
+  //       .catch((error) => {console.log(error)});
+  //   };
+  //   getData();
+  // }, []);
 
   // useeffect for payment confirmation =========================>
 
