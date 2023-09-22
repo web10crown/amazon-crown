@@ -1,3 +1,3 @@
-const publicRequest = "https://api-amazon-one.vercel.app";
+const publicRequest = "https://amazon-crown.netlify.app";
 
 export { publicRequest };
