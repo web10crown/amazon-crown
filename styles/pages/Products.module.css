@@ -73,6 +73,9 @@
 	.cardContainer {
 		grid-template-columns: auto auto;
 	}
+	.card {
+		padding: 5px;
+	}
 	.imgContainer {
 		width: 40vw;
 		height: 40vw;
