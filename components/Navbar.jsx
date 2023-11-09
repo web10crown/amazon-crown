@@ -18,6 +18,10 @@ const Navbar = () => {
 	const router = useRouter();
 	const [find, setFind] = useState("");
 
+	const handleKey = (e) =>{
+		console.log("colled this function")
+		console.log(e.key);
+	}
 	const findHandler = () => {
 		if (find !== "") {
 			router.push({
@@ -63,7 +67,7 @@ const Navbar = () => {
 						<div className={styles.tCenter}>
 							<div className={styles.searchbar}>
 								<div className={styles.selector}>
-									<select>
+									<select name="category">
 										<option value="All">All</option>
 										<option value="Laptops">Laptops</option>
 										<option value="goods">
@@ -71,11 +75,13 @@ const Navbar = () => {
 										</option>
 									</select>
 								</div>
-								<div className={styles.search}>
+								<div className={styles.search} >
 									<input
 										type="text"
-										className="pInput"
+										className="pInput"	
+										name="search"									
 										placeholder="Search Amazon.in"
+										onKeyUp={(e)=>{if(e.key==='Enter')findHandler()}}
 										onChange={(e) =>
 											setFind(
 												e.target.value.toLowerCase()
@@ -147,7 +153,7 @@ const Navbar = () => {
 					<div className={styles.mobile}>
 						<div className={styles.Msearchbar}>
 							<div className={styles.selector}>
-								<select>
+								<select name="category">
 									<option value="All">All</option>
 									<option value="Laptops">Laptops</option>
 									<option value="goods">
@@ -158,8 +164,10 @@ const Navbar = () => {
 							<div className={styles.search}>
 								<input
 									type="text"
+									name="search"
 									className="mInput"
 									placeholder="Search Amazon.in"
+									onKeyUp={(e)=>{if(e.key==='Enter')findHandler()}}
 									onChange={(e) =>
 										setFind(e.target.value.toLowerCase())
 									}
