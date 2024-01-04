@@ -15,11 +15,12 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 
 const Navbar = () => {
-	
+
 	useEffect(async ()=>{
 		try{
-			await axios.get("https://amazon-crown.vercel.app/");
-			console.log("something");
+			const res = await axios.get("https://amazon-crown.vercel.app/api/products");
+
+			console.log(res);
 		}catch(err){
 			console.log(err);
 		}
