@@ -1,7 +1,7 @@
 import styles from "@/styles/components/Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import {
 	Search,
@@ -12,8 +12,19 @@ import {
 } from "@mui/icons-material/";
 import Badge from "@mui/material/Badge";
 import { useSelector } from "react-redux";
+import axios from "axios";
 
 const Navbar = () => {
+	
+	useEffect(async ()=>{
+		try{
+			await axios.get("https://amazon-crown.vercel.app/");
+			console.log("something");
+		}catch(err){
+			console.log(err);
+		}
+	},[])
+
 	const cart = useSelector((state) => state.cart);
 	const router = useRouter();
 	const [find, setFind] = useState("");
