@@ -48,7 +48,7 @@ const Navbar = () => {
 											priority={true}
 											sizes="auto"
 										/> */}
-										<h2 style={{letterSpacing:"2px"}}>Crown</h2>
+										<h2>Crown</h2>
 									</div>
 								</div>
 							</Link>

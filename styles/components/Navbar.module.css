@@ -36,7 +36,8 @@
 	height: 30px;
 }
 .logo h2{
-	font-weight: 600;
+	letter-spacing: 1px;
+	font-weight: 500;
 }
 .locationContainer {
 	margin: 0 5px;
@@ -130,7 +131,7 @@
 .login {
 	display: flex;
 	align-items: flex-end;
-	font-weight: bold;
+	font-weight: 600;
 	padding: 5px 10px;
 	border: 1px solid transparent;
 	border-radius: 3px;
@@ -143,7 +144,7 @@
 	padding: 5px 10px;
 	display: flex;
 	align-items: flex-end;
-	font-weight: bold;
+	font-weight: 600;
 	border: 1px solid transparent;
 	border-radius: 3px;
 	cursor: pointer;
