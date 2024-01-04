@@ -90,15 +90,17 @@ export default Product;
 
 export const getServerSideProps = async ({ params }) => {
 	try {
-		const res = await axios.get(
-			`${publicRequest}/api/products/${params.id}`
-		);
+		const res = await axios.get(`${publicRequest}/api/products/${params.id}`);
 		return {
 			props: {
 				product: res.data,
 			},
 		};
-	} catch (err) {
-		console.log(err);
+	} catch (error) {
+		console.error(`Error fetching product with ID ${params.id}:`, error);
+
+		return {
+			notFound: true, // Returns a 404 response
+		};
 	}
 };

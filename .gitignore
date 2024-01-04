@@ -1,0 +1,14 @@
+# .gitignore
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore .next directory
+*.next/
+# .next/cache/webpack/client-development/
+
+
+# Other common entries, e.g., logs, build artifacts, etc.
+*.log
+.DS_Store
+*.env

@@ -38,16 +38,17 @@ const Navbar = () => {
 				<div className={styles.wrapper}>
 					<div className={styles.top}>
 						<div className={styles.tLeft}>
-							<Link href="/">
+							<Link href="/" style={{color:"white",textDecoration:"none"}}>
 								<div className={styles.logoContainer}>
 									<div className={styles.logo}>
-										<Image
+										{/* <Image
 											src="/logo/logo.png"
 											alt="amazon.in"
 											fill
 											priority={true}
 											sizes="auto"
-										/>
+										/> */}
+										<h2 style={{letterSpacing:"2px"}}>Crown</h2>
 									</div>
 								</div>
 							</Link>

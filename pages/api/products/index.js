@@ -9,26 +9,29 @@ const handler = async (req, res) => {
   } = req;
 
   if (method === "GET") {
-    if (cat) {
-      const allData = await products.find({});
-      const data = allData.filter((p) => p.cat.toLowerCase().includes(cat));
-      res.status(200).json(data);
-    } else if (find) {
-      const allData = await products.find({});
-      const data = allData.filter(
-        (d) =>
-          d.name.toLowerCase().includes(find) ||
-          d.cat.toLowerCase().includes(find) ||
-          d.brand.toLowerCase().includes(find) ||
-          d.desc.toLowerCase().includes(find)
-      );
-      res.status(200).json(data);
-    } else {
-      const data = await products.find({});
+    const filterConditions = {};
 
-      res.status(200).json(data);
+    if (cat) {
+      filterConditions.cat = { $regex: new RegExp(cat, 'i') };
     }
-  
+
+    if (find) {
+      filterConditions.$or = [
+        { name: { $regex: new RegExp(find, 'i') } },
+        { cat: { $regex: new RegExp(find, 'i') } },
+        { brand: { $regex: new RegExp(find, 'i') } },
+        { desc: { $regex: new RegExp(find, 'i') } },
+      ];
+    }
+
+    try {
+      const data = await products.find(filterConditions);
+      res.status(200).json(data);
+    } catch (error) {
+      // Handle error appropriately
+      console.error(error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
   }
 
   if (method === "POST") {

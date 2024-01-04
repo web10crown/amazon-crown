@@ -22,10 +22,11 @@
 }
 .imgContainer {
 	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 15vw;
+	height: 15vw;
 }
-.img {
+.imgContainer img {
+	object-fit: cover;
 }
 
 .cards::-webkit-scrollbar {

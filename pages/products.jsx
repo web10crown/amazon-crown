@@ -53,33 +53,26 @@ export default function Products({ data }) {
 	);
 }
 
-export const getServerSideProps = async (params) => {
-	const cat = params.query.cat;
-	const find = params.query.find;
+export const getServerSideProps = async ({ query }) => {
+	const { cat = '', find = '' } = query;
 
 	try {
+		let res;
+
 		if (cat) {
-			const res = await axios.get(
-				`${publicRequest}/api/products?cat=${cat}`
-			);
-			return {
-				props: { data: res.data },
-			};
+			res = await axios.get(`${publicRequest}/api/products?cat=${cat}`);
 		} else if (find) {
-			const res = await axios.get(
-				`${publicRequest}/api/products?find=${find}`
-			);
-			return {
-				props: { data: res.data },
-			};
+			res = await axios.get(`${publicRequest}/api/products?find=${find}`);
 		} else {
-			const res = await axios.get(`${publicRequest}/api/products`);
-			return {
-				props: { data: res.data },
-			};
+			res = await axios.get(`${publicRequest}/api/products`);
 		}
+
+		return {
+			props: { data: res.data },
+		};
 	} catch (err) {
-		console.log(err);
+		console.error(err);
+
 		return {
 			props: { data: [] },
 		};
