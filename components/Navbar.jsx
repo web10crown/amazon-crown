@@ -13,18 +13,22 @@ import {
 import Badge from "@mui/material/Badge";
 import { useSelector } from "react-redux";
 import axios from "axios";
+import { publicRequest } from "@/request";
 
 const Navbar = () => {
 
-	useEffect(async ()=>{
-		try{
-			const res = await axios.get("https://amazon-crown.vercel.app/api/products");
+	useEffect(()=>{
+		fetchData();
+	},[])
 
+	const fetchData = async()=>{
+		try{
+			const res = await axios.get(`${publicRequest}/api/products/`);
 			console.log(res);
 		}catch(err){
 			console.log(err);
 		}
-	},[])
+	}
 
 	const cart = useSelector((state) => state.cart);
 	const router = useRouter();
