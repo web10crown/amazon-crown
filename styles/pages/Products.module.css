@@ -23,8 +23,9 @@
 }
 .cardContainer {
 	border: 1px solid lightgray;
-	background-color: lightgray;
-	gap: 1px 1px;
+	border-right: none;
+	/* background-color: lightgray; */
+	/* gap: 1px 1px; */
 	flex: 1;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -34,6 +35,8 @@
 	background-color: white;
 	padding: 20px 30px;
 	cursor: pointer;
+	border-right: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;;
 }
 .imgContainer {
 	margin: auto;
@@ -45,9 +48,10 @@
 	margin-top: 30px;
 }
 .info button {
-	padding: 5px;
-	border-radius: 2px;
-	font-size: 16px;
+	padding: 2px;
+	/* border-radius: 2px; */
+	width: 100%;
+	font-size: 13px;
 	border: none;
 	background-color: rgb(204, 12, 57);
 	color: white;

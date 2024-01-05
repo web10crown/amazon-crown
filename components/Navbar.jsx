@@ -97,7 +97,7 @@ const Navbar = () => {
 										type="text"
 										className="pInput"	
 										name="search"									
-										placeholder="Search Amazon.in"
+										placeholder="Search Crown.in"
 										onKeyUp={(e)=>{if(e.key==='Enter')findHandler()}}
 										onChange={(e) =>
 											setFind(
@@ -183,7 +183,7 @@ const Navbar = () => {
 									type="text"
 									name="search"
 									className="mInput"
-									placeholder="Search Amazon.in"
+									placeholder="Search Crown.in"
 									onKeyUp={(e)=>{if(e.key==='Enter')findHandler()}}
 									onChange={(e) =>
 										setFind(e.target.value.toLowerCase())

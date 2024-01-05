@@ -13,10 +13,14 @@
 }
 .logo {
 	margin: auto;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	position: relative;
 	width: 120px;
 	height: 70px;
+}
+.logo h1{
+	font-weight: 500;
+	color: #232f3e;
 }
 .center {
 }

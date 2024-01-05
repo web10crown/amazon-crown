@@ -2,15 +2,39 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/components/Furnitures.module.css";
 const Furnitures = () => {
+
+	const handleLeftArrowClick = () => {
+		const cards = document.querySelector("#scrollf");
+		const cardWidth = cards.offsetWidth;
+		const scrollAmount = cardWidth;
+
+		cards.scrollBy({
+			left: -scrollAmount,
+			behavior: "smooth",
+		});
+	};
+	const handleRightArrowClick = () => {
+		const cards = document.querySelector("#scrollf");
+		const cardWidth = cards.offsetWidth;
+		const scrollAmount = cardWidth;
+
+		cards.scrollBy({
+			left: scrollAmount,
+			behavior: "smooth",
+		});
+	};
 	return (
 		<>
 			<div className={styles.container}>
 				<div className={styles.wrapper}>
+					<div className={styles.leftArrow} onClick={handleLeftArrowClick}>
+						&larr;
+					</div>
 					<h2>
 						Up to 60% off | Curated furniture picks for your home
 					</h2>
 					<Link href={`/products?cat=furniture`}>
-						<div className={styles.cards}>
+						<div id="scrollf" className={styles.cards}>
 							<div className={styles.card}>
 								<div className={styles.imgContainer}>
 									<Image
@@ -116,6 +140,9 @@ const Furnitures = () => {
 							</div>
 						</div>
 					</Link>
+					<div className={styles.rightArrow} onClick={handleRightArrowClick}>
+						&rarr;
+					</div>
 				</div>
 			</div>
 		</>

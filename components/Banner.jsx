@@ -6,7 +6,7 @@ const Banner = () => {
 			<div className={styles.bottom}>
 				<div className={styles.bLeft}>
 					<Menu />
-					All
+					ALL
 				</div>
 				<div className={styles.bCenter}>
 					<p>Amazon miniTV</p>

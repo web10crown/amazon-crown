@@ -38,13 +38,14 @@ const Login = () => {
 					<div className={styles.top}>
 						<div className={styles.logoContainer}>
 							<div className={styles.logo}>
-								<Image
+								{/* <Image
 									src="/logo/black.png"
 									alt="Amazon.In"
 									fill
 									sizes="auto"
 									priority={true}
-								/>
+								/> */}
+								<h1>Crown</h1>
 							</div>
 						</div>
 					</div>
@@ -78,21 +79,21 @@ const Login = () => {
 							<button>Continue</button>
 							<div className={styles.terms}>
 								<p>
-									By continuing, you agree to Amazon's
+									By continuing, you agree to Crown's
 									Conditions of Use and Privacy Notice.
 								</p>
 							</div>
 						</form>
 					</div>
 					<div className={styles.bottom}>
-						<p>New to Amazon?</p>
+						<p>New to Crown?</p>
 
 						<Link
 							href="register"
 							style={{ color: "black", textDecoration: "none" }}
 						>
 							<div className={styles.btn}>
-								Create your Amazon account
+								Create your Crown account
 							</div>
 						</Link>
 					</div>

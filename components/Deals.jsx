@@ -2,16 +2,40 @@ import Image from "next/image";
 import styles from "@/styles/components/Deals.module.css";
 import Link from "next/link";
 const Deal = () => {
+
+	const handleLeftArrowClick = () => {
+		const cards = document.querySelector("#scrolld");
+		const cardWidth = cards.offsetWidth;
+		const scrollAmount = cardWidth;
+
+		cards.scrollBy({
+			left: -scrollAmount,
+			behavior: "smooth",
+		});
+	};
+	const handleRightArrowClick = () => {
+		const cards = document.querySelector("#scrolld");
+		const cardWidth = cards.offsetWidth;
+		const scrollAmount = cardWidth;
+
+		cards.scrollBy({
+			left: scrollAmount,
+			behavior: "smooth",
+		});
+	};
 	return (
 		<>
 			<div className={styles.container}>
 				<div className={styles.wrapper}>
+					<div className={styles.leftArrow} onClick={handleLeftArrowClick}>
+						&larr;
+					</div>
 					<h2>Today’s Deals</h2>
 					<Link
 						href={`/products?cat=deal`}
 						style={{ textDecoration: "none", color: "black" }}
 					>
-						<div className={styles.cards}>
+						<div id="scrolld" className={styles.cards}>
 							<div className={styles.card}>
 								<div className={styles.imgContainer}>
 									<Image
@@ -146,6 +170,9 @@ const Deal = () => {
 							</div>
 						</div>
 					</Link>
+					<div className={styles.rightArrow} onClick={handleRightArrowClick}>
+						&rarr;
+					</div>
 				</div>
 			</div>
 		</>

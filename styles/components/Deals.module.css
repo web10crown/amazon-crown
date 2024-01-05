@@ -1,10 +1,36 @@
 .container {
 	padding: 20px;
 }
+.leftArrow {
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	padding: 10px;
+    border-radius: 10%;
+    background-color: #ffffff96;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #13192185;
+    z-index: 1;
+	backdrop-filter: blur(10px);
+}
+
+.rightArrow {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	padding: 10px;
+    border-radius: 10%;
+    background-color: #ffffff96;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #13192185;
+    z-index: 1;
+	backdrop-filter: blur(10px);
+}
 .wrapper {
 	padding: 20px;
 	background-color: white;
 	overflow-x: hidden;
+	position: relative;
 }
 .wrapper h2 {
 	margin-bottom: 10px;
@@ -39,18 +65,22 @@
 }
 
 .cards::-webkit-scrollbar {
-	height: 7px;
+	display: none;
 }
 
 .cards::-webkit-scrollbar-thumb {
-	background-color: gray;
-	border-radius: 20px;
 	display: none;
 }
 .cards:hover::-webkit-scrollbar-thumb {
-	display: flex;
+	display: none;
 }
 @media screen and (max-width: 850px) {
+	.leftArrow{
+		display: none;
+	}
+	.rightArrow{
+		display: none;
+	}
 }
 @media screen and (max-width: 600px) {
 	.container {

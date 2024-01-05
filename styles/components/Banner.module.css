@@ -15,7 +15,7 @@
 .bLeft {
 	display: flex;
 	align-items: center;
-	font-weight: bold;
+	/* font-weight: bold; */
 	padding: 0 10px;
 	border: 1px solid transparent;
 	cursor: pointer;
