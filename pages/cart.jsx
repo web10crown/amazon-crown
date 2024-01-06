@@ -22,11 +22,11 @@ const Cart = () => {
 							.slice()
 							.reverse()
 							.map((p) => (
-								<div className={styles.product}>
+								<div className={styles.product} key={p._id}>
 									<div className={styles.imgContainer}>
 										<div className={styles.img}>
 											<Image
-												src={p.img}
+												src={p.img.replace(/^http:/, 'https:')}
 												alt="product"
 												fill
 												sizes="auto"

@@ -23,7 +23,7 @@ const Product = ({ product }) => {
 						<div className={styles.imgContainer}>
 							<div className={styles.img}>
 								<Image
-									src={`${product.img}`}
+									src={`${product.img.replace(/^http:/, 'https:')}`}
 									alt="image"
 									fill
 									style={{ objectFit: "contain" }}

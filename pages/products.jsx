@@ -29,7 +29,7 @@ export default function Products({ data }) {
 									<>
 										<div className={styles.imgContainer}>
 											<Image
-												src={p.img}
+												src={p.img.replace(/^http:/, 'https:')}
 												alt={p.name}
 												fill
 												style={{ objectFit: "contain" }}
