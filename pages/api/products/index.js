@@ -2,6 +2,16 @@ import dbConnect from "../../../util/mongo";
 import products from "../../../models/Products";
 
 const handler = async (req, res) => {
+  const dummy = {
+    brand:"Pigeon",
+    cat: "kitchenware",
+    desc: "Pigeon Polypropylene Mini Handy and Compact Chopper with 3 Blades for Effortlessly Chopping Vegetables and Fruits for Your Kitchen Green, 400 m",
+    img: "http://res.cloudinary.com/dpxa7serz/image/upload/v1678994759/uploads/jj8cf7zanwbgzwpxlwhq.jpg",
+    name: "Compact Chopper",
+    price: 199,
+    _id: "64136d48b18e8b69a01348d8"
+  }
+  return res.status(200).json(dummy);
   await dbConnect();
   const {
     method,
