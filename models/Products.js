@@ -9,7 +9,7 @@ const ProductSchema = new mongoose.Schema(
     price: Number,
     img: String,
   },
-  { collection: "products", timeStamps: true }
+  { collection: "products", timestamps: true }
 );
 
 module.exports =

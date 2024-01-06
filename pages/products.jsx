@@ -64,7 +64,7 @@ export const getServerSideProps = async ({ query }) => {
 		} else if (find) {
 			res = await axios.get(`${publicRequest}/api/products?find=${find}`);
 		} else {
-			res = await axios.get(`${publicRequest}/api/products`,{ timeout: 10000 });
+			res = await axios.get(`${publicRequest}/api/products`,{ timeout: 15000 });
 		}
 
 		return {

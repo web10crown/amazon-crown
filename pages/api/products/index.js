@@ -28,7 +28,6 @@ const handler = async (req, res) => {
       const data = await products.find(filterConditions);
       res.status(200).json(data);
     } catch (error) {
-      // Handle error appropriately
       console.error(error);
       res.status(500).json({ error: 'Internal Server Error' });
     }
@@ -37,7 +36,7 @@ const handler = async (req, res) => {
   if (method === "POST") {
     try {
       const data = await products.create(req.body);
-      res.status(200).json(data);
+      res.status(201).json(data);
     } catch (err) {
       res.status(500).json(err);
     }
