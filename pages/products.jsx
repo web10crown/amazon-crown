@@ -55,7 +55,6 @@ export default function Products({ data }) {
 
 export const getServerSideProps = async ({ query }) => {
 	const { cat = '', find = '' } = query;
-
 	try {
 		let res;
 
