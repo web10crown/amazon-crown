@@ -17,18 +17,17 @@ import { publicRequest } from "@/request";
 
 const Navbar = () => {
 
-	useEffect(()=>{
-		fetchData();
-	},[])
-
 	const fetchData = async()=>{
 		try{
 			const res = await axios.get(`${publicRequest}/api/products/`);
-			console.log(res);
+			// console.log(res);
 		}catch(err){
 			console.log(err);
 		}
 	}
+	useEffect(()=>{
+		fetchData();
+	},[])
 
 	const cart = useSelector((state) => state.cart);
 	const router = useRouter();
