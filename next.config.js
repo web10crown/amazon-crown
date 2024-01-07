@@ -8,8 +8,8 @@ const nextConfig = {
    async rewrites() {
         return [
           {
-            source: '/api',
-            destination: 'https://apiamazon.vercel.app/api/',
+            source: '/api/:path*',
+            destination: 'https://apiamazon.vercel.app/api/:path*',
           },
         ]
       },
