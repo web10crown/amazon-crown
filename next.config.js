@@ -9,7 +9,7 @@ const nextConfig = {
         return [
           {
             source: '/api',
-            destination: 'https://api-amzn.vercel.app/api/',
+            destination: 'https://apiamazon.vercel.app/api/',
           },
         ]
       },
