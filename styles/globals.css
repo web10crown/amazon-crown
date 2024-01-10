@@ -13,8 +13,3 @@ img {
 	object-fit: contain;
 }
 
-@media screen and (max-width: 600px) {
-	::-webkit-scrollbar {
-		display: none;
-	}
-}
