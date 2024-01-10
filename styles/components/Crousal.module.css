@@ -1,27 +1,29 @@
-.container {
-}
+.container {}
+
 .wrapper {
 	height: 90vh;
 	position: relative;
 }
+
 .slider {
 	overflow: hidden;
 }
+
 .imgContainer {
 	display: flex;
 	width: 300vw;
 }
+
 .img {
 	position: relative;
 	width: 100vw;
 	height: 42vw;
-	mask-image: linear-gradient(
-		to bottom,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0)
-	);
+	mask-image: linear-gradient(to bottom,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0));
 }
+
 .image {
 	object-fit: cover;
 }
@@ -38,6 +40,7 @@
 	display: flex;
 	justify-content: space-between;
 }
+
 .cardContainer {
 	display: flex;
 	flex-direction: column;
@@ -47,23 +50,28 @@
 	background-color: white;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
 }
+
 .cardContainer h2 {
 	font-size: 1.5vw;
 }
+
 .cards {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
 .card {
 	margin: 5px 0;
 	cursor: pointer;
 }
+
 .card p {
 	max-width: 9vw;
 	margin-top: 5px;
 	font-size: 12px;
 }
+
 .pImage {
 	position: relative;
 	height: 7vw;
@@ -80,6 +88,7 @@
 	.wrapper {
 		height: 75vh;
 	}
+
 	.img {
 		height: 90vw;
 	}
@@ -87,27 +96,35 @@
 	.bottom {
 		display: flex;
 		overflow-x: scroll;
-		scrollbar-width: thin;
+		/* IE and Edge */
+		-ms-overflow-style: none;
+		scrollbar-width: none;
 	}
+
 	.bottom::-webkit-scrollbar {
-		height: 7px;
+		/* height: 7px; */
+		display: none;
 	}
 
 	.bottom::-webkit-scrollbar-thumb {
-		background-color: gray;
-		border-radius: 20px;
+		/* background-color: gray; */
+		/* border-radius: 20px; */
 		display: none;
 	}
+
 	.bottom:hover::-webkit-scrollbar-thumb {
-		display: flex;
+		/* display: flex; */
 	}
+
 	.cardContainer {
 		margin: 0 10px;
 		width: 26vw;
 	}
+
 	.cardContainer h2 {
 		font-size: 2vw;
 	}
+
 	.card p {
 		max-width: 12vw;
 		font-size: 14px;
@@ -118,20 +135,25 @@
 		height: 9vw;
 	}
 }
+
 @media screen and (max-width: 600px) {
 	.bottom {
 		scrollbar-width: none;
 	}
+
 	.products {
 		padding: 0;
 	}
+
 	.cardContainer {
 		width: 88vw;
 	}
+
 	.cardContainer h2 {
 		font-size: 5vw;
 		margin-bottom: 10px;
 	}
+
 	.card p {
 		max-width: 42vw;
 		font-size: 14px;
