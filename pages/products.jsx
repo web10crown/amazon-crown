@@ -120,7 +120,7 @@ export default function Products({ data }) {
 												fill
 												style={{ objectFit: "contain" }}
 												sizes="auto"
-												priority={true}
+												priority={false}
 											/>
 										</div>
 
