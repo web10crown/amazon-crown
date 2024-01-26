@@ -37,6 +37,7 @@
 }
 .logo h2{
 	font-weight: 500;
+	font-family: cursive;
 }
 
 @media screen and (max-width: 700px) {

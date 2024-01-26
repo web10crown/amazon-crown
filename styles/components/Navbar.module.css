@@ -38,6 +38,7 @@
 .logo h2{
 	letter-spacing: 1px;
 	font-weight: 500;
+	font-family: cursive;
 }
 .locationContainer {
 	margin: 0 5px;
