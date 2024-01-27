@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
 .container {
 	color: white;
 	position: sticky;
@@ -38,7 +39,8 @@
 .logo h2{
 	letter-spacing: 1px;
 	font-weight: 500;
-	font-family: cursive;
+	/* font-family: cursive; */
+	font-family: 'Orbitron', sans-serif;
 }
 .locationContainer {
 	margin: 0 5px;

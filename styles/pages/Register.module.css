@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
 .container {
 	padding: 20px;
 	display: flex;
@@ -21,7 +23,8 @@
 .logo h1{
 	font-weight: 500;
 	color: #232f3e;
-	font-family: cursive;
+	/* font-family: cursive; */
+	font-family: 'Orbitron', sans-serif;
 }
 .center {
 }
@@ -81,5 +84,5 @@
 	margin-right: 10px;
 }
 .mobile input {
-	flex: 1;
+	flex-grow: 1;
 }

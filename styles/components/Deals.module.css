@@ -48,11 +48,10 @@
 }
 .imgContainer {
 	position: relative;
-	width: 200px;
-	height: 150px;
+	width: 13vw;
+	height: 13vw;
 }
-.img {
-}
+
 .btn {
 	border: none;
 	margin: 5px 0;
