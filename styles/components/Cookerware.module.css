@@ -38,7 +38,7 @@
 .cards {
 	display: flex;
 	overflow-x: scroll;
-	scrollbar-width: thin;
+	scrollbar-width: none;
 }
 .card {
 	margin: 5px 7px;
