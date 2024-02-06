@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Head>
-				<title>Amazon | India</title>
+				<title>Crown | India</title>
 				<meta
 					name="description"
 					content="Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free Shipping & Cash on Delivery"
