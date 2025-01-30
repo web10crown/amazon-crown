@@ -2,7 +2,7 @@ const Lipstick = () => {
     return (
         <div style={{ position: 'relative', maxHeight: "60vh", overflow: 'hidden' }}>
             <video
-                style={{ width: "100%" }}
+                style={{ width: "100%",minHeight:"40vh",objectFit:"cover" }}
                 src="/videos/2nd.mp4"
                 autoPlay
                 loop

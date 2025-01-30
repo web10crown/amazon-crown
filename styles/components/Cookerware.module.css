@@ -31,6 +31,7 @@
 	background-color: white;
 	overflow-x: hidden;
 	position: relative;
+	border-radius: 7px;
 }
 .wrapper h2 {
 	margin-bottom: 10px;
