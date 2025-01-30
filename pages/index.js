@@ -9,6 +9,9 @@ import { publicRequest } from "../request";
 import { useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Lipstick from "@/components/Lipstick";
+import TechVideo from "@/components/TechVideo";
+import FurnitureVideo from "@/components/FurnitureVideo";
 
 export default function Home() {
   const router = useRouter();
@@ -43,12 +46,19 @@ export default function Home() {
   return (
     <>
       <Crousal />
+
+      <Lipstick />
+
       <Kitchen />
       <Deals />
       <Furnitures />
+
+      <FurnitureVideo />
+
       <Sports />
       <Grocery />
       <Cookerware />
+      <TechVideo />
     </>
   );
 }
