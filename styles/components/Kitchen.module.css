@@ -1,6 +1,6 @@
 .container {
 	padding: 20px;
-	
+
 }
 
 .leftArrow {
@@ -8,11 +8,11 @@
 	left: 5px;
 	top: 50%;
 	padding: 10px;
-    border-radius: 10%;
-    background-color: #ffffff96;
-    cursor: pointer;
-    box-shadow: 5px 5px 20px #13192185;
-    z-index: 1;
+	border-radius: 10%;
+	background-color: #ffffff96;
+	cursor: pointer;
+	box-shadow: 5px 5px 20px #13192185;
+	z-index: 1;
 	backdrop-filter: blur(10px);
 }
 
@@ -21,11 +21,11 @@
 	right: 5px;
 	top: 50%;
 	padding: 10px;
-    border-radius: 10%;
-    background-color: #ffffff96;
-    cursor: pointer;
-    box-shadow: 5px 5px 20px #13192185;
-    z-index: 1;
+	border-radius: 10%;
+	background-color: #ffffff96;
+	cursor: pointer;
+	box-shadow: 5px 5px 20px #13192185;
+	z-index: 1;
 	backdrop-filter: blur(10px);
 }
 
@@ -71,7 +71,7 @@
 
 .cards::-webkit-scrollbar-thumb {
 	display: none;
-	
+
 }
 
 .cards:hover::-webkit-scrollbar-thumb {
@@ -79,10 +79,11 @@
 }
 
 @media screen and (max-width: 850px) {
-	.leftArrow{
+	.leftArrow {
 		display: none;
 	}
-	.rightArrow{
+
+	.rightArrow {
 		display: none;
 	}
 }
@@ -102,6 +103,9 @@
 
 	.cards {
 		scrollbar-width: none;
+		overflow-x: auto;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.imgContainer {
