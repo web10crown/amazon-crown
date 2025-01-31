@@ -45,7 +45,7 @@ const Kitchen = () => {
 				<div className={styles.leftArrow} onClick={handleLeftArrowClick}>
 					&larr;
 				</div>
-				<h2>Up to 60% off | Shop for new kitchenware from local shops</h2>
+				<h2>Shop for new kitchenware</h2>
 				<Link href={`/products?cat=kitchenware`}>
 					<div id="scroll"className={styles.cards}>
 						{kitchenImages.map((image, index) => (

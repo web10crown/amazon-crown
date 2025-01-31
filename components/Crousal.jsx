@@ -59,7 +59,7 @@ const Crousal = () => {
 					<div className={styles.bottom}>
 						<div className={styles.products}>
 							<div className={styles.cardContainer}>
-								<h2> Up to 60% off | Styles for women </h2>
+								<h2>Styles for women </h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
 										<Link href="/products?find=cloth women" >
@@ -132,7 +132,7 @@ const Crousal = () => {
 							</div>
 
 							<div className={styles.cardContainer}>
-								<h2> Up to 60% off | Styles for men </h2>
+								<h2>Styles for men </h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
 										<Link href="/products?find=cloth men">
@@ -206,7 +206,7 @@ const Crousal = () => {
 
 							<div className={styles.cardContainer}>
 								<h2>
-									Home appliances | 10% off on selected cards
+									Home appliances
 								</h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
@@ -280,7 +280,7 @@ const Crousal = () => {
 							</div>
 
 							<div className={styles.cardContainer}>
-								<h2>Revamp your home in style </h2>
+								<h2>Revamp your home </h2>
 								<div className={styles.cards}>
 									<div className={styles.card}>
 										<Link href="/products?find=bedsheet">

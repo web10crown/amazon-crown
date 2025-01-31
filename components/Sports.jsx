@@ -30,7 +30,7 @@ const Sports = () => {
 					<div className={styles.leftArrow} onClick={handleLeftArrowClick}>
 						&larr;
 					</div>
-					<h2>Best Sellers in Sports, Fitness & Outdoors</h2>
+					<h2>Fitness & Outdoors</h2>
 					<Link href={`/products?cat=sport`}>
 						<div id="scrolls" className={styles.cards}>
 							<div className={styles.card}>

@@ -30,7 +30,7 @@ const Grocery = () => {
 					<div className={styles.leftArrow} onClick={handleLeftArrowClick}>
 						&larr;
 					</div>
-					<h2>Frequently repurchased in Grocery</h2>
+					<h2>Frequently purchased in Grocery</h2>
 					<Link href={`/products?cat=grocery`}>
 						<div id="scrollg" className={styles.cards}>
 							<div className={styles.card}>

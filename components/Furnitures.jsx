@@ -31,7 +31,7 @@ const Furnitures = () => {
 						&larr;
 					</div>
 					<h2>
-						Up to 60% off | Curated furniture picks for your home
+						Furniture picks for you
 					</h2>
 					<Link href={`/products?cat=furniture`}>
 						<div id="scrollf" className={styles.cards}>

@@ -32,7 +32,7 @@ const Cookerware = () => {
 				<div className={styles.leftArrow} onClick={handleLeftArrowClick}>
 					&larr;
 				</div>
-				<h2>Up to 30% off | Shop for new Cookerware from local shops</h2>
+				<h2>Shop for new Cookerware</h2>
 				<Link href={`/products?cat=cookerware`}>
 					<div id="scrollk" className={styles.cards}>
 						{cookerwareImages.map((image, index) => (

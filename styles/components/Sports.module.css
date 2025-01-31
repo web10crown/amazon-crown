@@ -34,6 +34,7 @@
 	border-radius: 7px;
 }
 .wrapper h2 {
+	font-size: 1rem;
 	margin-bottom: 10px;
 }
 .cards {
@@ -85,6 +86,9 @@
 		font-size: 15px;
 	}
 	.cards {
+		overflow: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
 		scrollbar-width: none;
 	}
 	.card {
