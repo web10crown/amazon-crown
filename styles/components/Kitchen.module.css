@@ -45,24 +45,29 @@
 	display: flex;
 	overflow-x: scroll;
 	scrollbar-width: none;
+	
 }
 
 .card {
 	margin: 5px 7px;
 	margin-bottom: 20px;
 	cursor: pointer;
+	background-color: #f7f8f8;
+	border-radius: 7px;
 }
 
 .imgContainer {
 	position: relative;
 	width: 13vw;
 	height: 13vw;
+	
 }
 
 .imgContainer img {
 	width: 90%;
 	height: 90%;
-	object-fit: cover;
+	object-fit: fill;
+	border-radius: 7px;
 }
 
 .cards::-webkit-scrollbar {
@@ -105,11 +110,12 @@
 		scrollbar-width: none;
 		overflow-x: auto;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-around;
 	}
+	
 
 	.imgContainer {
-		width: 150px;
-		height: 150px;
+		width: 42vw;
+		height: 42vw;
 	}
 }

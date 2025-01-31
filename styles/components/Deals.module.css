@@ -1,16 +1,17 @@
 .container {
 	padding: 20px;
 }
+
 .leftArrow {
 	position: absolute;
 	left: 5px;
 	top: 50%;
 	padding: 10px;
-    border-radius: 10%;
-    background-color: #ffffff96;
-    cursor: pointer;
-    box-shadow: 5px 5px 20px #13192185;
-    z-index: 1;
+	border-radius: 10%;
+	background-color: #ffffff96;
+	cursor: pointer;
+	box-shadow: 5px 5px 20px #13192185;
+	z-index: 1;
 	backdrop-filter: blur(10px);
 }
 
@@ -19,13 +20,14 @@
 	right: 5px;
 	top: 50%;
 	padding: 10px;
-    border-radius: 10%;
-    background-color: #ffffff96;
-    cursor: pointer;
-    box-shadow: 5px 5px 20px #13192185;
-    z-index: 1;
+	border-radius: 10%;
+	background-color: #ffffff96;
+	cursor: pointer;
+	box-shadow: 5px 5px 20px #13192185;
+	z-index: 1;
 	backdrop-filter: blur(10px);
 }
+
 .wrapper {
 	padding: 20px;
 	background-color: white;
@@ -33,20 +35,26 @@
 	position: relative;
 	border-radius: 7px;
 }
+
 .wrapper h2 {
 	margin-bottom: 10px;
 }
+
 .cards {
 	display: flex;
 	overflow-x: scroll;
 	scrollbar-width: none;
 	scrollbar-color: gray;
 }
+
 .card {
 	margin: 5px 20px;
 	cursor: pointer;
 	margin-bottom: 20px;
+	background-color: #f7f8f8;
+	border-radius: 7px;
 }
+
 .imgContainer {
 	position: relative;
 	width: 13vw;
@@ -60,6 +68,7 @@
 	color: white;
 	background-color: #cc0c39;
 }
+
 .card p {
 	font-size: 13px;
 }
@@ -71,35 +80,52 @@
 .cards::-webkit-scrollbar-thumb {
 	display: none;
 }
+
 .cards:hover::-webkit-scrollbar-thumb {
 	display: none;
 }
+
 @media screen and (max-width: 850px) {
-	.leftArrow{
+	.leftArrow {
 		display: none;
 	}
-	.rightArrow{
+
+	.rightArrow {
 		display: none;
 	}
 }
+
 @media screen and (max-width: 600px) {
 	.container {
 		padding: 5px;
 	}
+
 	.wrapper {
 		padding: 5px;
 	}
+
 	.wrapper h2 {
 		font-size: 15px;
 	}
+
 	.cards {
 		scrollbar-width: none;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
+
 	.card {
 		margin: 5px 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+
 	.imgContainer {
-		width: 150px;
-		height: 100px;
+		width: 42vw;
+		height: 42vw;
+	}
+	.imgContainer img{
+		object-fit: contain;
 	}
 }
