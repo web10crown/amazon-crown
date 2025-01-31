@@ -56,14 +56,14 @@ const Navbar = () => {
 							<Link href="/" style={{color:"white",textDecoration:"none"}}>
 								<div className={styles.logoContainer}>
 									<div className={styles.logo}>
-										{/* <Image
-											src="/logo/logo.png"
+										<Image
+											src="/logo/crown.png"
 											alt="amazon.in"
 											fill
 											priority={true}
 											sizes="auto"
-										/> */}
-										<h2>Crown</h2>
+										/>
+										{/* <h2>Crown</h2> */}
 									</div>
 								</div>
 							</Link>
