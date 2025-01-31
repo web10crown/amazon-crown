@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Head>
-				<title>Crown | India</title>
+				<title>Crown | Shop</title>
 				<meta
 					name="description"
 					content="Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free Shipping & Cash on Delivery"
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
-				<link rel="icon" href="/logo/fav.webp" />
+				<link rel="icon" href="/logo/crown.png" />
 			</Head>
 			<Navbar />
 			<Banner />
