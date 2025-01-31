@@ -31,10 +31,11 @@
 }
 .logo {
 	position: relative;
-	display: flex;
-	align-items: center;
-	width: 100px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
+}
+.main-logo {
+	object-fit: contain !important;
 }
 .logo h2{
 	letter-spacing: 1px;
@@ -184,7 +185,8 @@
 @media screen and (max-width: 950px) {
 	.logo {
 		/* width: 70px; */
-		height: 22px;
+		height: 30px;
+		width: 30px;	
 	}
 	.searchbar {
 		width: 35vw;

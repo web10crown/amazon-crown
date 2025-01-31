@@ -60,8 +60,8 @@ const Navbar = () => {
 											src="/logo/crown.png"
 											alt="amazon.in"
 											fill
+											className="main-logo"
 											priority={true}
-											sizes="auto"
 										/>
 										{/* <h2>Crown</h2> */}
 									</div>
@@ -153,7 +153,12 @@ const Navbar = () => {
 							>
 								<div className={styles.cart}>
 									<Badge
-										color="secondary"
+										sx={{
+											"& .MuiBadge-badge": {
+											  backgroundColor: "orange",  // Change background color
+											  color: "white", // Change text color if needed
+											},
+										}}
 										badgeContent={cart.quantity}
 										showZero
 									>
