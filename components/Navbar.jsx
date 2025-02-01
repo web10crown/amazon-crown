@@ -13,6 +13,7 @@ import {
 	PersonAdd,
 	LocalMall,
 	HomeRepairService,
+	ShoppingCart,
 } from "@mui/icons-material/";
 import Badge from "@mui/material/Badge";
 import { useSelector } from "react-redux";
@@ -170,7 +171,7 @@ const Navbar = () => {
 										badgeContent={cart.quantity}
 										showZero
 									>
-										<LocalMall style={{fontSize:"30px"}}/>
+										<ShoppingCart style={{fontSize:"30px"}}/>
 									</Badge>
 									
 								</div>

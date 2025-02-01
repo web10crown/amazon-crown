@@ -3,32 +3,33 @@
 	position: unset;
 	display: flex;
 	background-color: #232f3e;
-	overflow: hidden; /* Hide overflow to create a seamless loop */
-  }
-  
-  .bottom {
+	overflow: hidden;
+	/* Hide overflow to create a seamless loop */
+}
+
+.bottom {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-  }
-  
-  .bottom::-webkit-scrollbar {
+}
+
+.bottom::-webkit-scrollbar {
 	display: none;
-  }
-  
-  .bLeft {
+}
+
+.bLeft {
 	display: flex;
 	align-items: center;
 	padding: 0 10px;
 	border: 1px solid transparent;
 	cursor: pointer;
 	border-radius: 2px;
-  }
-  
-  .bLeft:hover {
+}
+
+.bLeft:hover {
 	border: 1px solid white;
-  }
-  
-  .bottom p {
+}
+
+.bottom p {
 	text-transform: uppercase;
 	padding: 10px;
 	font-size: 13px;
@@ -36,42 +37,43 @@
 	border-radius: 2px;
 	cursor: pointer;
 	white-space: nowrap;
-  }
-  
-  .bottom p:hover {
+}
+
+.bottom p:hover {
 	border: 1px solid white;
-  }
-  
-  .bCenter {
+}
+
+.bCenter {
 	display: flex;
-	flex: 1; /* Take up remaining space */
-	overflow: hidden; /* Hide overflow */
-  }
-  
-  .marquee {
+	flex: 1;
+	overflow: hidden;
+}
+
+.marquee {
 	display: flex;
 	flex-shrink: 0;
-	width: 100%;
 	/* overflow: hidden; */
 	animation: marquee 20s linear infinite;
-  }
-  
-  .marqueeContent {
-	width: 100%;
+}
+
+.marqueeContent {
+	width: 2400px;
 	display: flex;
 	flex-shrink: 0;
 	justify-content: space-around;
 	/* animation: marquee 20s linear infinite;  */
-  }
-  .marquee:hover {
+}
+
+.marquee:hover {
 	animation-play-state: paused;
-  }
-  
-  @keyframes marquee {
+}
+
+@keyframes marquee {
 	0% {
-	  transform: translateX(-100%);
+		transform: translateX(-1200px);
 	}
+
 	100% {
-	  transform: translateX(0); /* Move the content to the left by 50% */
+		transform: translateX(0);
 	}
-  }
+}

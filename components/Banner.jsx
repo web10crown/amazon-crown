@@ -17,7 +17,7 @@ const Banner = () => {
 		{ href: "/products?find=electronics", text: "Electronics" },
 	];
 
-	const duplicatedLinks = [...links];
+	const duplicatedLinks = [...links,...links];
 
 	return (
 		<>
