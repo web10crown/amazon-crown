@@ -8,7 +8,7 @@ const Crousal = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setSlide(slide < 2 ? slide + 1 : 0);
-		}, 3000);
+		}, 4000);
 		return () => clearInterval(interval);
 	}, [slide]);
 
@@ -16,6 +16,8 @@ const Crousal = () => {
 		<>
 			<div className={styles.container}>
 				<div className={styles.wrapper}>
+
+
 					<div className={styles.slider}>
 						<div
 							className={styles.imgContainer}

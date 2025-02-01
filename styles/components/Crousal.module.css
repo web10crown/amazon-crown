@@ -12,6 +12,7 @@
 .imgContainer {
 	display: flex;
 	width: 300vw;
+	transition: transform 0.8s ease-in-out;
 }
 
 .img {
@@ -26,6 +27,7 @@
 
 .image {
 	object-fit: cover;
+	transition: opacity 0.5s ease-in-out;
 }
 
 .bottom {

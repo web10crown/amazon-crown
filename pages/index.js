@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 import Lipstick from "@/components/Lipstick";
 import TechVideo from "@/components/TechVideo";
 import FurnitureVideo from "@/components/FurnitureVideo";
+import BrandScroller from "@/components/BrandScroller";
 
 export default function Home() {
   const router = useRouter();
@@ -46,7 +47,7 @@ export default function Home() {
   return (
     <>
       <Crousal />
-
+      <BrandScroller />
       <Lipstick />
 
       <Kitchen />
@@ -55,9 +56,9 @@ export default function Home() {
 
       <FurnitureVideo />
 
-      <Sports />
       <Grocery />
       <Cookerware />
+      <Sports />
       <TechVideo />
     </>
   );

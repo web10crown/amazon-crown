@@ -9,6 +9,10 @@ import {
 	ShoppingBagOutlined,
 	PersonOutlineOutlined,
 	Menu,
+	Person,
+	PersonAdd,
+	LocalMall,
+	HomeRepairService,
 } from "@mui/icons-material/";
 import Badge from "@mui/material/Badge";
 import { useSelector } from "react-redux";
@@ -120,18 +124,23 @@ const Navbar = () => {
 							</div>
 						</div>
 						<div className={styles.tRight}>
-							<div className={styles.lang}>
+							{/* <div className={styles.lang}>
 								<div className={styles.ind}>
-									<Image
-										src="/logo/ind.png"
-										alt="IND"
-										fill
-										sizes="auto"
-										priority={true}
-									/>
+									
 								</div>
-								EN
-							</div>
+								
+							</div> */}
+							<Link
+								href="/products"
+								style={{
+									color: "white",
+									textDecoration: "none",
+								}}
+							>
+								<div className={styles.login}>
+								<HomeRepairService style={{fontSize:"30px"}} />									
+								</div>
+							</Link>
 							<Link
 								href="/login"
 								style={{
@@ -140,8 +149,7 @@ const Navbar = () => {
 								}}
 							>
 								<div className={styles.login}>
-									<PersonOutlineOutlined />
-									Login
+									<Person style={{fontSize:"30px"}}/>									
 								</div>
 							</Link>
 							<Link
@@ -162,9 +170,9 @@ const Navbar = () => {
 										badgeContent={cart.quantity}
 										showZero
 									>
-										<ShoppingBagOutlined />
+										<LocalMall style={{fontSize:"30px"}}/>
 									</Badge>
-									Cart
+									
 								</div>
 							</Link>
 						</div>
