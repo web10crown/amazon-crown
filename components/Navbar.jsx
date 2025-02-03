@@ -6,12 +6,7 @@ import { useRouter } from "next/router";
 import {
 	Search,
 	FmdGoodOutlined,
-	ShoppingBagOutlined,
-	PersonOutlineOutlined,
-	Menu,
 	Person,
-	PersonAdd,
-	LocalMall,
 	HomeRepairService,
 	ShoppingCart,
 } from "@mui/icons-material/";
@@ -22,23 +17,42 @@ import { publicRequest } from "@/request";
 
 const Navbar = () => {
 
-	const fetchData = async()=>{
-		try{
+	const [visible, setVisible] = useState(true);
+	let lastScrollY = 0;
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.innerWidth <= 768) { // Apply only on mobile
+				if (window.scrollY > lastScrollY) {
+					setVisible(false); // Hide on scroll up
+				} else {
+					setVisible(true); // Show on scroll down
+				}
+				lastScrollY = window.scrollY;
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [lastScrollY]);
+
+	const fetchData = async () => {
+		try {
 			const res = await axios.get(`${publicRequest}/api/products/`);
 			// console.log(res);
-		}catch(err){
+		} catch (err) {
 			console.log(err);
 		}
 	}
-	useEffect(()=>{
+	useEffect(() => {
 		fetchData();
-	},[])
+	}, [])
 
 	const cart = useSelector((state) => state.cart);
 	const router = useRouter();
 	const [find, setFind] = useState("");
 
-	const handleKey = (e) =>{
+	const handleKey = (e) => {
 		console.log("colled this function")
 		console.log(e.key);
 	}
@@ -58,7 +72,7 @@ const Navbar = () => {
 				<div className={styles.wrapper}>
 					<div className={styles.top}>
 						<div className={styles.tLeft}>
-							<Link href="/" style={{color:"white",textDecoration:"none"}}>
+							<Link href="/" style={{ color: "white", textDecoration: "none" }}>
 								<div className={styles.logoContainer}>
 									<div className={styles.logo}>
 										<Image
@@ -99,10 +113,10 @@ const Navbar = () => {
 								<div className={styles.search} >
 									<input
 										type="text"
-										className="pInput"	
-										name="search"									
+										className="pInput"
+										name="search"
 										placeholder="Search Crown.in"
-										onKeyUp={(e)=>{if(e.key==='Enter')findHandler()}}
+										onKeyUp={(e) => { if (e.key === 'Enter') findHandler() }}
 										onChange={(e) =>
 											setFind(
 												e.target.value.toLowerCase()
@@ -139,7 +153,7 @@ const Navbar = () => {
 								}}
 							>
 								<div className={styles.login}>
-								<HomeRepairService style={{fontSize:"30px"}} />									
+									<HomeRepairService style={{ fontSize: "30px" }} />
 								</div>
 							</Link>
 							<Link
@@ -150,7 +164,7 @@ const Navbar = () => {
 								}}
 							>
 								<div className={styles.login}>
-									<Person style={{fontSize:"30px"}}/>									
+									<Person style={{ fontSize: "30px" }} />
 								</div>
 							</Link>
 							<Link
@@ -164,23 +178,23 @@ const Navbar = () => {
 									<Badge
 										sx={{
 											"& .MuiBadge-badge": {
-											  backgroundColor: "orange",  // Change background color
-											  color: "white", // Change text color if needed
+												backgroundColor: "orange",  // Change background color
+												color: "white", // Change text color if needed
 											},
 										}}
 										badgeContent={cart.quantity}
 										showZero
 									>
-										<ShoppingCart style={{fontSize:"30px"}}/>
+										<ShoppingCart style={{ fontSize: "30px" }} />
 									</Badge>
-									
+
 								</div>
 							</Link>
 						</div>
 					</div>
 					{/*mobile devices html here fro searcbar =====================> */}
 
-					<div className={styles.mobile}>
+					<div className={`${styles.mobile} ${visible ? styles.show : styles.hide}`}>
 						<div className={styles.Msearchbar}>
 							<div className={styles.selector}>
 								<select name="category">
@@ -197,7 +211,7 @@ const Navbar = () => {
 									name="search"
 									className="mInput"
 									placeholder="Search Crown.in"
-									onKeyUp={(e)=>{if(e.key==='Enter')findHandler()}}
+									onKeyUp={(e) => { if (e.key === 'Enter') findHandler() }}
 									onChange={(e) =>
 										setFind(e.target.value.toLowerCase())
 									}

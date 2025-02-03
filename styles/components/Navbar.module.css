@@ -1,12 +1,12 @@
-
 .container {
 	color: white;
 	position: sticky;
 	z-index: 7;
 	top: 0;
 }
-.wrapper {
-}
+
+.wrapper {}
+
 .top {
 	background-color: #131921;
 	padding: 5px 10px;
@@ -14,10 +14,12 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
 .tLeft {
 	display: flex;
 	align-items: center;
 }
+
 .logoContainer {
 	padding: 7px;
 	display: flex;
@@ -26,23 +28,28 @@
 	border-radius: 3px;
 	cursor: pointer;
 }
+
 .logoContainer:hover {
 	border: 1px solid white;
 }
+
 .logo {
 	position: relative;
 	width: 35px;
 	height: 35px;
 }
+
 .main-logo {
 	object-fit: contain !important;
 }
-.logo h2{
+
+.logo h2 {
 	letter-spacing: 1px;
 	font-weight: 500;
 	/* font-family: cursive; */
 	font-family: 'Orbitron', sans-serif;
 }
+
 .locationContainer {
 	margin: 0 5px;
 	padding: 5px;
@@ -55,19 +62,21 @@
 .locationContainer:hover {
 	border: 1px solid white;
 }
+
 .location p {
 	font-weight: 300;
 	color: #cccc;
 	font-size: 12px;
 }
+
 .location h4 {
 	font-size: 15px;
 	font-weight: 500;
 }
 
 /*searchbar css start here */
-.tCenter {
-}
+.tCenter {}
+
 .searchbar {
 	display: flex;
 	width: 40vw;
@@ -75,6 +84,7 @@
 	justify-content: space-between;
 	border-radius: 5px;
 }
+
 .selector select {
 	padding: 12px 5px;
 	width: 50px;
@@ -90,6 +100,7 @@
 	flex: 2;
 	align-items: center;
 }
+
 .search input {
 	width: 100%;
 	padding: 0 10px;
@@ -97,6 +108,7 @@
 	height: 100%;
 	outline: none;
 }
+
 .searchbar:focus-within {
 	outline: 3px solid orange;
 }
@@ -109,11 +121,13 @@
 	cursor: pointer;
 	border-radius: 0px 5px 5px 0px;
 }
+
 .tRight {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
+
 .lang {
 	padding: 5px 10px;
 	font-weight: 600;
@@ -124,15 +138,18 @@
 	border-radius: 3px;
 	border: 1px solid transparent;
 }
+
 .lang:hover {
 	border: 1px solid white;
 }
+
 .ind {
 	position: relative;
 	width: 25px;
 	height: 25px;
 	margin-right: 3px;
 }
+
 .login {
 	display: flex;
 	align-items: flex-end;
@@ -142,9 +159,11 @@
 	border-radius: 3px;
 	cursor: pointer;
 }
+
 .login:hover {
 	border: 1px solid white;
 }
+
 .cart {
 	padding: 5px 5px;
 	display: flex;
@@ -154,6 +173,7 @@
 	border-radius: 3px;
 	cursor: pointer;
 }
+
 .cart:hover {
 	border: 1px solid white;
 }
@@ -162,16 +182,20 @@
 .mobile {
 	display: none;
 	background-color: #131921;
-
 	flex-direction: column;
 	padding: 10px;
+	position: relative;
+	z-index: -1;
+	transition: transform 0.3s ease-in-out;
 }
+
 .Msearchbar {
 	display: flex;
 	background-color: white;
 	justify-content: space-between;
 	border-radius: 5px;
 }
+
 .MlocationContainer {
 	margin: 0 5px;
 	padding: 5px;
@@ -180,29 +204,42 @@
 	border: 1px solid transparent;
 }
 
+.show {
+	transform: translateY(0);
+  }
+  
+  .hide {
+	transform: translateY(-200%);
+  }
+
 /*media queries */
 
 @media screen and (max-width: 950px) {
 	.logo {
 		/* width: 70px; */
 		height: 30px;
-		width: 30px;	
+		width: 30px;
 	}
+
 	.searchbar {
 		width: 35vw;
 	}
 }
+
 @media screen and (max-width: 850px) {
 	.locationContainer {
 		display: none;
 	}
+
 	.searchbar {
 		display: none;
 	}
+
 	.mobile {
 		display: flex;
 	}
 }
+
 @media screen and (max-width: 500px) {
 	.lang {
 		display: none;
