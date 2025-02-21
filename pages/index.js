@@ -53,6 +53,7 @@ export default function Home() {
       <Lipstick />
 
       <Kitchen />
+      {/* <TechVideo /> */}
       <Deals />
       <Furnitures />
 
@@ -62,7 +63,7 @@ export default function Home() {
       <Cookerware />
       <Sports />
       <Summersale />
-      {/* <TechVideo /> */}
+      
     </>
   );
 }

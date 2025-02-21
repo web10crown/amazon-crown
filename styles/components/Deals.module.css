@@ -48,43 +48,7 @@
 	scrollbar-color: gray;
 }
 
-.card {
-	margin: 5px 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	cursor: pointer;
-	margin-bottom: 20px;
-	background-color: #f7f8f8;
-	border-radius: 7px;
-	white-space: nowrap;
-	/* overflow: hidden; */
-	text-overflow: ellipsis;
-}
 
-.imgContainer {
-	position: relative;
-	width: 13vw;
-	height: 13vw;
-}
-
-.btn {
-	border: none;
-	margin: 5px 0;
-	padding: 5px 10px;
-	color: white;
-	width: 100%;
-	background-color: #cc0c39;
-	font-size: clamp(10px, .7vw, 40px);
-	white-space: nowrap;
-	
-}
-
-.card p {
-	font-size: clamp(10px, .7vw, 40px);
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
 
 .cards::-webkit-scrollbar {
 	display: none;
@@ -97,6 +61,131 @@
 .cards:hover::-webkit-scrollbar-thumb {
 	display: none;
 }
+
+
+
+.productCard {
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 20px 20px;
+    background: #ffffff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.productTumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.productTumb img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.productCard:hover {
+    scale: 1.03;
+    transition: all .3s ;
+}
+
+.productDetails {
+    padding: 20px;
+    background: #f7f8f8;
+    border-radius: 0 0 7px 7px;
+}
+
+.productCatagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.productDetails h4 {
+    font-weight: 500;
+    display: block;
+    /* margin-bottom: 18px; */
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.productDetails h4:hover {
+    color: #fbb72c;
+    cursor: pointer;
+}
+
+.productDetails p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.productBottomDetails {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.productBottomDetails div {
+    float: left;
+    width: 50%;
+}
+
+.productPrice {
+    font-size: 18px;
+    color: #999;
+    font-weight: 600;
+}
+
+.productPrice small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.productLinks {
+    text-align: end;
+    /* margin-left: 5px; */
+}
+
+.productLinks a {
+    display: inline-block;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.productLinks a:hover {
+    /* color: #fbb72c; */
+    color: red;
+}
+
+
+
 
 @media screen and (max-width: 850px) {
 	.leftArrow {
@@ -127,19 +216,88 @@
 		justify-content: space-around;
 	}
 
-	.card {
-		margin: 10px 10px;
+
+
+
+	/* my custom css start from here  */
+
+	.productCard{
+		min-width: auto;
+		width: 42vw;
+		font-size: 12px;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+
+	.badge {
+		font-size: 10px;
+	}
+
+	.productTumb {	
+		height: 30vw;
+		padding: 5px;
+		padding-top: 10px;
+	}
+
+	.productTumb img {
+		max-width: 80%;
+		max-height: 80%;
+	}
+
+	.productDetails {
+		padding: 7px;
+		background: #f7f8f8;
+		border-radius: 0 0 7px 7px;
+		
+	}
+
+	.productCatagory {	
+		font-size: 10px;
+		margin-bottom: 10px;
+	}
+
+	.productDetails h4 {
+		white-space: nowrap; 
+		overflow: hidden;  /* Hide overflowing text */
+		text-overflow: ellipsis;
+		
+	}
+
+	.productDetails p {
+		font-size: 12px;
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+
+	.productBottomDetails {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		overflow: hidden;
+		border-top: 1px solid #eee;
+		padding-top: 5px;
+	}
+	.productBottomDetails div {
+		float: none;
+		width: 100%;
 	}
 
-	.imgContainer {
-		width: 42vw;
-		height: 42vw;
+	.productPrice {
+		font-size: 13px;
+		color: #999;
+		font-weight: 600;
 	}
 
-	.imgContainer img {
-		object-fit: contain;
+	.productLinks {
+		text-align: start;
+		display: flex;
+		justify-content: space-between;
+		/* margin-left: 5px; */
+	}
+
+	.productLinks a {
+		margin-left: 0;
 	}
 }
+
+
+

@@ -2,7 +2,7 @@ const FurnitureVideo = () => {
     return (
         <div style={{ position: 'relative', overflow: 'hidden' }}>
             <img
-                style={{ width: "100%",minHeight:"30vh",objectFit:"cover" }}
+                style={{ width: "100%",objectFit:"cover" }}
                 src="/banners/cosmetic.jpg"
                 
             />
