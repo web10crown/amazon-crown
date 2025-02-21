@@ -1,9 +1,9 @@
-const FurnitureVideo = () => {
+const Summersale = () => {
     return (
-        <div style={{ position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'relative',  overflow: 'hidden' }}>
             <img
                 style={{ width: "100%",minHeight:"30vh",objectFit:"cover" }}
-                src="/banners/cosmetic.jpg"
+                src="/banners/friday.jpg"
                 
             />
             <div style={{
@@ -21,4 +21,4 @@ const FurnitureVideo = () => {
         </div>
     )
 }
-export default FurnitureVideo;
+export default Summersale;

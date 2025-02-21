@@ -13,6 +13,8 @@ import Lipstick from "@/components/Lipstick";
 import TechVideo from "@/components/TechVideo";
 import FurnitureVideo from "@/components/FurnitureVideo";
 import BrandScroller from "@/components/BrandScroller";
+import Summersale from "@/components/Summersale";
+
 
 export default function Home() {
   const router = useRouter();
@@ -55,11 +57,12 @@ export default function Home() {
       <Furnitures />
 
       <FurnitureVideo />
-
+  
       <Grocery />
       <Cookerware />
       <Sports />
-      <TechVideo />
+      <Summersale />
+      {/* <TechVideo /> */}
     </>
   );
 }
