@@ -168,7 +168,17 @@
 
 .productLinks {
     text-align: end;
+	
     /* margin-left: 5px; */
+}
+.heart{
+	color: #e1e1e1;
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+.heart:hover{
+	color: red;
 }
 
 .productLinks a {
@@ -223,7 +233,7 @@
 
 	.productCard{
 		min-width: auto;
-		width: 42vw;
+		width: 45vw;
 		font-size: 12px;
 		margin: auto;
 		margin-bottom: 15px;

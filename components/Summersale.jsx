@@ -1,23 +1,10 @@
 const Summersale = () => {
     return (
-        <div style={{ position: 'relative',  overflow: 'hidden' }}>
+        <div>
             <img
                 style={{ width: "100%",objectFit:"cover" }}
-                src="/banners/friday.jpg"
-                
-            />
-            <div style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                color: 'white',
-                fontSize: '3rem',
-                fontWeight: 'bold',              
-                textAlign: 'center',
-            }}>
-               
-            </div>
+                src="/banners/friday.jpg"              
+            />            
         </div>
     )
 }
